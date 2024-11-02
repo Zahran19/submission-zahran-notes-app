@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zahran's Notes-App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- App Bar -->
+    <app-bar></app-bar>
+
+    <!-- Form untuk menambah catatan -->
+    <section id="add-note">
+        <h2>Tambah Catatan Baru</h2>
+        <note-form></note-form>
+    </section>
+
+    <!-- Daftar Catatan -->
+    <section id="notes-list">
+        <h2>Catatan Anda</h2>
+        <div id="notes-container" class="grid-container"></div>
+        <div id="loading-indicator" class="loading">Loading...</div>
+    </section>
+
+    <script src="bundle.js"></script>
+</body>
+</html>
